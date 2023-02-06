@@ -105,7 +105,7 @@ function Dashboard () {
                             <Card.Body className='px-0 py-2'>
                                 <Table responsive hover>
                                     <tbody>
-                                    {loader?<h1>Loading</h1>:
+                                    {loader?null:
                                     
                                     Data.map((data) => (
                                         <>

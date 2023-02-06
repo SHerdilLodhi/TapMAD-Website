@@ -88,7 +88,7 @@ async function removeItem(id) {
                                     </thead>
                                     <tbody>
                                     {loader?
-                                    <h1>Loading</h1>:
+                                    null:
                                     
                                     Data.map((data,i) => (
                                         <>
@@ -126,7 +126,7 @@ async function removeItem(id) {
                                     </thead>
                                     <tbody>
                                     {loader1?
-                                    <h1>Loading</h1>:
+                                    null:
                                     
                                     Data1.map((data,i) => (
                                         <>
@@ -161,7 +161,7 @@ async function removeItem(id) {
                                     </thead>
                                     <tbody>
                                     {loader2?
-                                    <h1>Loading</h1>:
+                                    null:
                                     
                                     Data2.map((data,i) => (
                                         <>
