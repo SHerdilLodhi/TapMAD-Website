@@ -9,7 +9,16 @@ import avatar2 from '../../assets/images/user/avatar-2.jpg';
 import avatar3 from '../../assets/images/user/avatar-3.jpg';
 import tabContent from "./tabContent"
 import { data } from 'jquery';
+import SubmittedFormsTable from '../../App/components/wof-tables/formSubmissionsTable';
 function Dashboard () {
+
+    const Datatest = [
+        { _id: 1, name: 'Movie 1', categories: 'Action' },
+        { _id: 2, name: 'Movie 2', categories: 'Comedy' },
+        { _id: 3, name: 'Movie 3', categories: 'Drama' },
+    ];
+
+
     const [Data,SetData]=useState([])
     const [loader,SetLoader]=useState(true);
     async function GetData(){
@@ -40,6 +49,12 @@ function Dashboard () {
         return (
             <Aux>
                 <Row>
+                <Col md={12} xl={12}>
+                <SubmittedFormsTable />
+
+
+
+                </Col>
                     <Col md={6} xl={4}>
                         <Card>
                             <Card.Body>

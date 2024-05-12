@@ -1,0 +1,8 @@
+.border-cell {
+    border: 1px solid #ccc;
+    max-width: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+

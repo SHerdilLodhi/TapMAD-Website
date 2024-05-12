@@ -3,6 +3,7 @@ import {Row, Col, Card, Table} from 'react-bootstrap';
 
 import Aux from "../../hoc/_Aux";
 import DEMO from "../../store/constant";
+import BlogsTable from '../../App/components/wof-tables/blogsTable';
 function BootstrapTable  (){
 const [Data,SetData]=useState([])
 const [loader,SetLoader]=useState(true)
@@ -69,6 +70,9 @@ async function removeItem(id) {
         return (
             <Aux>
                 <Row>
+                    <Col sm={12}>
+                    <BlogsTable/>
+                    </Col>
                     <Col>
                         <Card>
                             <Card.Header>
